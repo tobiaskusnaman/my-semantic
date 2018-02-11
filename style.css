@@ -1,0 +1,26 @@
+.area{
+  width: 100%
+}
+
+.leftArea{
+  position: absolute;
+  left: 0%;
+  width: :15%;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 21px;
+}
+
+.rightArea{
+  position: absolute;
+  left: 19%;
+  height: 100%;
+  width: :100%;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+    <link rel="stylesheet" href="/style.css">
     <title>Manager</title>
   </head>
   <body>
@@ -31,31 +32,73 @@
       </div>
     </nav>
 
-    <section class="hero  is-primary is-bold">
-      <div class="hero-body">
+    <div class="area">
+      <div class="leftArea">
+        <aside class="menu">
+            <p class="menu-label">
+              General
+            </p>
+            <ul class="menu-list">
+              <li><a>Dashboard</a></li>
+              <li><a>Customers</a></li>
+            </ul>
+            <p class="menu-label">
+              Administration
+            </p>
+            <ul class="menu-list">
+              <li><a>Team Settings</a></li>
+              <li>
+                <a class="is-active">Manage Your Team</a>
+                <ul>
+                  <li><a>Members</a></li>
+                  <li><a>Plugins</a></li>
+                  <li><a>Add a member</a></li>
+                </ul>
+              </li>
+              <li><a>Invitations</a></li>
+              <li><a>Cloud Storage Environment Settings</a></li>
+              <li><a>Authentication</a></li>
+            </ul>
+            <p class="menu-label">
+              Transactions
+            </p>
+            <ul class="menu-list">
+              <li><a>Payments</a></li>
+              <li><a>Transfers</a></li>
+              <li><a>Balance</a></li>
+            </ul>
+          </aside>
+      </div>
+
+      <div class="rightArea">
+        <section class="hero  is-primary is-bold">
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title">
+                Welcome Tobias Kusnaman
+              </h1>
+              <h2 class="subtitle">
+                Manager
+              </h2>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
         <div class="container">
-          <h1 class="title">
-            Welcome Tobias Kusnaman
-          </h1>
-          <h2 class="subtitle">
-            Manager
-          </h2>
+          <div class="content has-text-centered">
+            <p>
+              <strong>Mulyo Dito Pangestu</strong> by Tobias Kusnaman  </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </footer>
+
+    </div>
 
 
-    <footer class="footer">
-      <div class="container">
-        <div class="content has-text-centered">
-          <p>
-            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-          </p>
-        </div>
-      </div>
-    </footer>
+
+
+
 
   </body>
 </html>
