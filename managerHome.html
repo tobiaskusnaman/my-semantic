@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
     <link rel="stylesheet" href="/style.css">
     <title>Manager</title>
@@ -83,6 +84,19 @@
             </div>
           </div>
         </section>
+        <br>
+        <h2 class="title"> Add a To Do </h2>
+        <textarea id='add-to-do' rows="8" cols="80" placeholder="What do you want to do?"></textarea>
+        <br>
+        <button type="button" onclick="submitToDo()"> Submit </button>
+        <br><br>
+
+
+        <h2 class="title"> To Do List</h2>
+        <ol class="to-dos">
+
+        </ol>
+
       </div>
       <footer class="footer">
         <div class="container">
@@ -97,6 +111,12 @@
 
 
 
+    <script>
+
+      function submitToDo(){
+        $('.to-dos').append(`<li>${$('#add-to-do').val()}</li>`)
+      }
+    </script>
 
 
 
